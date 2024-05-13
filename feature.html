@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Profile Management</title>
+    <link rel="stylesheet" href="pet.css">
+</head>
+<body>
+    <h1>Pet Profile Management</h1>
+
+    <h2>Add Pet Profile</h2>
+    <form action="/add_pet_profile" method="post">
+        <label for="pet_name">Pet Name:</label>
+        <input type="text" id="pet_name" name="pet_name" required><br><br>
+        <input type="submit" value="Add Pet Profile">
+    </form>
+
+
+    <h2>Update/Delete Pet Profile</h2>
+    <form action="/update_pet_profile" method="post">
+        <label for="pet_id">Pet Identity:</label>
+        <input type="text" id="pet_id" name="pet_id" required><br><br>
+
+        <label for="pet_species">Pet Species:</label>
+        <input type="text" id="pet_species" name="pet_species" required><br><br>
+
+        <label for="pet_breed">Pet Breed:</label>
+        <input type="text" id="pet_breed" name="pet_breed" required><br><br>
+
+        <label for="pet_age">Pet Age:</label>
+        <input type="text" id="pet_age" name="pet_age" required><br><br>
+
+        <label for="pet_weight">Pet Weight:</label>
+        <input type="text" id="pet_weight" name="pet_weight" required><br><br>
+        
+
+        </select><br><br>
+        <input type="submit" value="Update Pet Profile">
+    </form>
+    <form action="/delete_pet_profile" method="post">
+        <input type="submit" value="Delete Pet Profile">
+    </form>
+</body>
+</html>
